@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    top:0;
+    height: 90px;
+    width: 100%;
+    background-color: rgb(76, 74, 74) ;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+header h1{
+    font-family: 'Prata', serif;
+    padding: 20px;
+    color: wheat;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    header h1{
+        font-size: 8vw;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    header{
+        padding: 20px;
+    }
+ 
+    h1 {
+        font-size: 10vw;
+    }
+    
+ }
+.nav-links {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    background-color: rgb(101, 99, 99) ;
+    display: flex;
+    list-style: none;
+ }
+ 
+ .nav-links li {
+    padding:15px;
+    margin-left: 20px;
+ }
+ 
+ .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+ }
+ 
+ .nav-links a:hover,
+ .nav-links a.active {
+    background: white;
+    color: black;
+ }
+ 
+ .menu-icon {
+    overflow: visible;
+    display: flex;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+ }
+ 
+ 
+ @media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+ 
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+ 
+    .nav-links li {
+        margin: 15px 0;
+    }
+ 
+    
+    .menu-icon {
+        
+        display: block;
+       
+    }
+ 
+    .show-menu {
+        overflow: visible;
+        position: absolute;
+        display: flex;
+        z-index: 999;
+    }
+ }
+ 
+
+body {
+    top: 100px;
+    margin-top: 50px;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    background: #9f3312;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    top: 90px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-container {
+    position: relative;
+    margin: 24px;
+    width: 320px;
+    height: 570px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.img-container,
+.body-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.body-container {
+    position: relative;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(24, 83, 122, 0.6);
+    opacity: 0;
+    transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-container:hover .overlay {
+    opacity: 1;
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .container,
+    .item-container,
+    .img-container{
+        position: relative;
+        z-index:1;
+        overflow: visible;
+ }
+}
+ @media (max-width: 480px) {
+    .container,
+    .item-container,
+    .img-container{
+        position: relative;
+        z-index:1;
+        overflow: visible;
+    }
+}
+.event-info {
+    background-color: #f5bfaf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.title{
+    color: #9c4d2f;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 12px;
+}
+
+.info {
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.separator {
+    width: 20%;
+    height: 6px;
+    background-color: #f0a38c;
+    margin-bottom: 16px;
+}
+
+.additional-info {
+    border-top: 1px solid #bbb;
+    margin-top: 12px;
+    padding: 28px;
+    padding-bottom: 0;
+}
+
+.additional-info .info {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info i {
+    color: #042b45;
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+
+.info span {
+    color: #042b45;
+    font-weight: bolder;
+}
+
+.booking {
+    color: #f5bfaf;
+    border: 3px solid #ee9b9b;
+    background-color: transparent;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top 0.4s;
+}
+
+.item-container:hover .booking {
+    top: 50px;
+}
+
+.booking:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

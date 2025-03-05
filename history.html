@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Prata&family=Rasa:ital,wght@0,300..700;1,300..700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- Link Swiper JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css" />
+
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="history.css">
+
+    <title>Popular Shows</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Our Popular Fashion shows include</h1>
+        <div class="menu-icon" onclick="toggleMenu()">Menu</div>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="timeline.html">Event Schedule</a></li>
+            <li><a href="history.html" class="active">Popular Shows</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="swiper Vehicle_Slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="alexander.jpeg" height="50">
+                    <div class="content">
+                        <h3>Alexandre Vauthier Haute Couture Spring Summer 2017</h3>
+                        <p id="p1">Date: January 24, 2017</p>
+                        <p id="p2">It was organised at Grand Palais, Paris.
+                            he collection presented a more approachable spin on couture, moving away from the ceremonial aspects of 
+                            traditional haute couture. It featured a mix of high fashion and casual elements, 
+                            such as denim shorts paired with voluminous taffeta tops and Swarovski crystal belts.The runway featured top models like Kendall Jenner and Bella Hadid
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="jacobs.jpeg" alt="jacobs" >
+                    <div class="content">
+                        <h3>Marc Jacobs Fall/Winter 2020 fashion show</h3>
+                        <p id="p1">February 12, 2020 (as part of New York Fashion Week for the Fall/Winter 2020/2021 season)</p>
+                         <p id="p2">This show had a more dramatic and theatrical vibe, 
+                            with a focus on dark colors, luxurious fabrics, and intricate details.It was held at the 
+                            Park Avenue Armory in New York City.
+
+
+
+                         </p>
+                        
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="nyfw.jpg" alt="">
+                    <div class="content">
+                        <h3>New York Fashion Week 2022</h3>
+                        <p id="p1">Dates: February 11-16, 2022</p>
+                        <p id="p2"> Some of the key locations included Skylight Clarkson Square, Industria, and a new venue on Fifth Avenue (608 Fifth Avenue)2.
+                            The event featured collections from designers like Michael Kors, Prabal Gurung, and Claudia Li
+                         Celebrity Appearances: Celebrities like Zendaya and Gigi
+                          Hadid were spotted on the runway and in the front rows</p>
+                        
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="paris.jpg" alt="">
+                    <div class="content">
+                        <h3> L'Oréal Paris "Le Défilé Walk Your Worth" fashion show in Paris during Paris Fashion Week in October 2023</h3>
+                        <p id="p1">Date:October 1st 2023</p> <p id="p2"> It was organised at the Esplanade of the Eiffel Tower in Paris2. 
+                            This event marked the sixth edition of L'Oréal Paris' historic runway show,
+                             which aimed to celebrate women's empowerment, strength, and unity2.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="swiper-slide box">
+                    <img src="lakme.avif" alt="">
+                    <div class="content">
+                       <h3>Lakme Fashion Week 2024</h3>
+                        <p id="p1">Date:October 9-13</p>
+                          <p  id="p2">It was organised at state-of-the-art Jio World Convention Centre notable designers who showcased their collections at LFW 2024 included Tarun Tahiliani, Manish Malhotra,
+                             Anamika Khanna, Sabyasachi Mukherjee, and Masaba Gupta. The event also emphasized sustainable fashion,
+                             bold colors and prints, minimalism, and layering as key trends for the year1.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- Theme Toggle -->
+    <div class="ThemeToggle">
+
+        <div class="toggleBtn">
+            <i class="fas fa-cog"></i>
+        </div>
+
+
+        <h3>Choose Color</h3>
+
+        <div class="buttons">
+
+            <div class="themeBtn" style="background: #0011ff;"></div>
+            <div class="themeBtn" style="background: #ffb404;"></div>
+            <div class="themeBtn" style="background: #2bff00;"></div>
+            <div class="themeBtn" style="background: #fc00dbe6;"></div>
+            <div class="themeBtn" style="background: #cb5805;"></div>
+            <div class="themeBtn" style="background: #ff041d;"></div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- SwiperJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+
+    <!-- INDEX.JS -->
+    <script src="history.js"></script>
+
+</body>
+
+</html>
