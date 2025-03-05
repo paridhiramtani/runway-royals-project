@@ -109,8 +109,8 @@
 }
 
 .col-md-4 {
-    position:relative;
-    background-color: #e84393;
+    position: relative;
+    background-color: #fff9c4; /* Light yellow background for the form */
     align-items: center;
     justify-items: center;
     overflow: hidden;
@@ -118,8 +118,54 @@
     padding: 20px;
     font-size: 24px;
     max-width: 400px;
-    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: linear-gradient(135deg, #fffde7, #ffecb3); /* Soft yellow gradient */
     position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 2px solid #fbc02d; /* Vibrant yellow border */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fbc02d; /* Bright yellow for the heading text */
+    font-size: 36px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fdd835; /* Medium yellow for labels */
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #fbc02d; /* Yellow border for input fields */
+    border-radius: 3px;
+    background-color: #fffde7; /* Pale yellow background for input */
+}
+
+button {
+    padding: 10px;
+    background-color: #f9a825; /* Vibrant yellow button */
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #f57f17; /* Darker yellow-orange for hover effect */
+}
+
+.modal-content {
+    background-color: #fff9c4; /* Light yellow for modal content */
+    padding: 2rem;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #fbc02d; /* Yellow border for modal */
 }
 
 body {
