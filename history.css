@@ -92,6 +92,7 @@ header .navbar {
         display: block;
         width: 100%;
         padding: 12px;
+        color: black;
     }
 
     .menu-icon {
@@ -100,7 +101,10 @@ header .navbar {
 
     /* When menu is toggled, show it */
     .nav-links.show-menu {
-        display: flex;
+       overflow: visible;
+       position: absolute;
+       display: flex;
+       z-index: 999;
     }
 }
 
