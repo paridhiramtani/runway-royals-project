@@ -1,162 +1,145 @@
  */tion Link Styling */
-
-
-
 .moon-dance-regular {
-    font-family: "Moon Dance", cursive, sans-serif;
-    font-weight: 500;
+    font-family: "Moon Dance", cursive;
+    font-weight: 300;
     font-style: normal;
     font-size: 36px;
     color: rgb(89, 0, 255);
-    z-index: 10;
-    position: relative;
+}
+header {
+    z-index: 1000; /* Keep it above, but ensure spacing below */
+}
+html {
+    scroll-padding-top: 70px; /* Match the header height */
+}
+.content h2{
+    position:relative;
+    top:0;
+    bottom:10px;
 }
 
-.content {
-    position: relative;
 
-    background-color:rgb(255, 209, 220);
- /* Translucent background for better readability */
-    z-index: 2;
-}
-.col-md-4 {
-    position: relative;
-    background-color: #ffeb3b; /* Light yellow background for the form */
-    align-items: center;
-    justify-items: center;
-    overflow: hidden;
-    border-radius: 8px;
-    padding: 20px;
-    font-size: 24px;
-    max-width: 400px;
-    background: linear-gradient(135deg, #fff176, #ffeb3b); /* Gradient yellow */
-    position: relative;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+.row h2 {
+    margin-top: 70px; /* Adjust based on header height */
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #f57f17; /* Strong yellow-orange for the text */
-    font-size: 36px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #fbc02d; /* Medium yellow for labels */
+h2 {
+    visibility: visible; /* Ensures it's visible */
+    opacity: 1; /* Makes sure it’s fully opaque */
 }
-
-input {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #fdd835; /* Yellow border for input fields */
-    border-radius: 3px;
-    background-color: #fffde7; /* Pale yellow background */
-}
-
-button {
-    padding: 10px;
-    background-color: #f9a825; /* Vibrant yellow button */
-    color: #ffffff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #f57f17; /* Darker yellow-orange for hover effect */
+h2 {
+    position: relative;
+    z-index: 10;
 }
 
 
 
-  header {
-    padding:10px;
-    height: 90px;
-    top:0;
+  /* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+.moon-dance-regular {
+    font-family: "Moon Dance", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(89, 0, 255);
+}
+
+/* Navbar Styles */
+header .navbar {
     width: 100%;
-    margin: auto;
-    height: 50px;
+    height: 60px; /* Adjusted height */
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 30px;
-    position: absolute;
-    z-index: 100;
+    justify-content: space-between; /* Ensures proper spacing */
+    padding: 15px 30px;
+    position: fixed; /* Keeps navbar fixed on scroll */
+    top: 0;
+    left: 0;
+    z-index: 1000;
     background: black;
-    gap: 15px;
-    position: absolute;
-    top:0;
-  }
-  
-  .nav-links {
-    position: absolute;
-    padding:15px;
-    left: 30%;
-    width: 100%;
-    position: absolute;
-    top:0;
-    height: 60px;
+}
+
+/* Navigation Links */
+.navbar-nav {
     display: flex;
+    align-items: center;
     list-style: none;
- }
- 
- .nav-links li {
-    margin-left: 20px;
- }
- 
- .nav-links a {
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Link Styling */
+.navbar-nav a {
     text-decoration: none;
     color: white;
-    padding: 8px 12px;
+    padding: 8px 15px;
     border-radius: 20px;
-    transition: 0.3s;
- }
- 
- .nav-links a:hover,
- .nav-links a.active {
-    background: white;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    margin:20px;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a.active {
+    background:khaki;
     color: black;
- }
- 
- .menu-icon {
+}
+
+/* Menu Icon for Mobile */
+.menu-icon {
     display: none;
     font-size: 28px;
     color: white;
     cursor: pointer;
- }
- 
- 
- @media (max-width: 768px) {
-    header {
-        padding: 15px 20px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    header .navbar {
+        padding: 15px;
     }
- 
-    
+
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
         position: absolute;
-        top: 0px;
+        top: 60px;
         left: 0;
+        width: 100%;
+        background: black;
         text-align: center;
+        padding: 10px 0;
     }
- 
+
     .nav-links li {
-        margin: 15px 0;
+        width: 100%;
     }
- 
-    
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+    }
+
     .menu-icon {
         display: block;
     }
- 
-    .show-menu {
-        display: flex ;
+
+    /* When menu is toggled, show it */
+    .nav-links.show-menu {
+        display: flex;
     }
- }
+}
+
  
 
 .container-fluid {
@@ -350,3 +333,70 @@ border-line::before, .border-line::after {
     margin-top: 10px;
     opacity: 0.8;
 }
+/* Apply a colorful gradient effect with rotation */
+@keyframes rotateGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1, #fc6076, #ff9a9e);
+    background-size: 400% 400%;
+    animation: rotateGradient 10s ease infinite;
+}
+
+/* Rotating Border Effect */
+.border-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(45deg, #ff2770, #ff41c0, #2bceff, #fffb00) border-box;
+    animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Button Hover Effect */
+button {
+    background: linear-gradient(45deg, #ff512f, #dd2476, #ff9a44);
+    transition: transform 0.3s ease-in-out, background 0.5s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Nav Links Hover Effect */
+.nav-links a:hover, .nav-links a.active {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    transform: rotate(5deg);
+    transition: 0.5s;
+}
+
+/* Animated Header */
+header {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: rotateGradient 6s ease infinite;
+}
+
+  
+
+
+
+
+
+
+
+ 
