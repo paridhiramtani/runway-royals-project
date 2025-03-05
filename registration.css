@@ -5,6 +5,51 @@
     font-size: 50px;
     color: rgb(89, 0, 255);
 }
+/* Rotating Border Effect */
+.border-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px; /* Adds space inside border */
+    background: linear-gradient(45deg, #ff2770, #ff41c0, #2bceff, #fffb00);
+    background-size: 300% 300%;
+    border: 4px solid transparent;
+    animation: borderRotate 5s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Body Background Animation */
+@keyframes rotateGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffdde1, #fc6076);
+    background-size: 400% 400%;
+    animation: rotateGradient 10s ease infinite;
+}
+
+/* Button Hover Effect */
+button {
+    background: linear-gradient(45deg, #ff512f, #dd2476, #ff9a44);
+    transition: transform 0.3s ease-in-out, background 0.5s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    transform: scale(1.1) rotate(5deg);
+}
+
 
   header {
     padding:10px;
