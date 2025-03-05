@@ -14,8 +14,6 @@
   color: #000;
 }
 
-
-  /* Header Styles */
 header {
   top:0;
   width: 100%;
@@ -29,7 +27,7 @@ header {
   background-color: rgb(238, 23, 66);
   gap: 15px;
 }
-/* Heading */
+
 header .heading{
   font-family: 'Prata', serif;
   padding: 20px;
@@ -44,7 +42,6 @@ header .heading{
   color: var(--main);
 }
 
-/* Navigation Menu */
 .nav-links {
   height: 50px;
   background-color: #f14444;
@@ -79,48 +76,44 @@ header .heading{
   color: black;
 }
 
-
-/* Menu Icon (Mobile) */
 .menu-icon {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 5px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1100;
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
+  header {
+      padding: 15px 20px;
+  }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 90px;
-        left: 0;
-        background: rgba(0, 0, 0, 0.9);
-        text-align: center;
-        padding-bottom: 2rem;
-    }
+  
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: rgba(0, 0, 0, 0.9);
+      text-align: center;
+  }
 
-    .nav-links.show-menu {
-        display: flex;
-    }
+  .nav-links li {
+      margin: 15px 0;
+  }
 
-    .nav-links li {
-        margin: 15px 0;
-    }
+  
+  .menu-icon {
+      display: block;
+  }
+
+  .show-menu {
+      display: flex ;
+  }
 }
-
 
 body {
   background:#ffcccc; /* Bright pink gradient */
