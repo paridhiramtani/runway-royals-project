@@ -316,3 +316,60 @@ border-line::before, .border-line::after {
     margin-top: 10px;
     opacity: 0.8;
 }
+/* Apply a colorful gradient effect with rotation */
+@keyframes rotateGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1, #fc6076, #ff9a9e);
+    background-size: 400% 400%;
+    animation: rotateGradient 10s ease infinite;
+}
+
+/* Rotating Border Effect */
+.border-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(45deg, #ff2770, #ff41c0, #2bceff, #fffb00) border-box;
+    animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Button Hover Effect */
+button {
+    background: linear-gradient(45deg, #ff512f, #dd2476, #ff9a44);
+    transition: transform 0.3s ease-in-out, background 0.5s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Nav Links Hover Effect */
+.nav-links a:hover, .nav-links a.active {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    transform: rotate(5deg);
+    transition: 0.5s;
+}
+
+/* Animated Header */
+header {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: rotateGradient 6s ease infinite;
+}
