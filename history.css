@@ -77,12 +77,38 @@ h1 span {
 }
 
 .menu-icon {
-  display: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
+    display: none; 
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 101; 
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 90px; 
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        z-index: 100;
+    }
+    .nav-links.show-menu {
+        display: flex;
+    }
+}
 
 @media (max-width: 768px) {
   header {
@@ -96,11 +122,11 @@ h1 span {
  
  @media (max-width: 480px) {
     header{
-        padding: 20px;
+        padding: 10px;
     }
  
     .heading {
-        font-size: 10vw;
+        font-size: 5vw;
     }
     
   
