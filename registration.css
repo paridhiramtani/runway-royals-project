@@ -82,9 +82,13 @@ header .navbar {
 }
 
 .navbar-nav a:hover,
-.navbar-nav a.active {
+ {
     background:white;
     color: black;
+}
+.navbar-nav a.active{
+    color:orange;
+    backgorund:yellow;
 }
 
 /* Menu Icon for Mobile */
