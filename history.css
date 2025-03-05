@@ -28,7 +28,7 @@ header {
   gap: 15px;
 }
 
-header .heading{
+header h1{
   font-family: 'Prata', serif;
   padding: 20px;
   color: wheat;
@@ -38,7 +38,7 @@ header .heading{
   align-items: center;
 }
 
-.heading span {
+h1 span {
   color: var(--main);
 }
 
@@ -237,6 +237,24 @@ section {
   background: var(--main);
 }
 
+@media (max-width: 768px) {
+    .Vehicle_Slider,
+    .Vehicle_Slider .box
+    .Vehicle_Slider img{
+        position: relative;
+        z-index:1;
+        overflow: visible;
+ }
+}
+ @media (max-width: 480px) {
+    .Vehicle_Slider,
+    .Vehicle_Slider .box
+    .Vehicle_Slider img{
+        position: relative;
+        z-index:1;
+        overflow: visible;
+    }
+}
 /* Theme Toggle */
 .ThemeToggle {
   position: fixed;
