@@ -237,26 +237,6 @@ section {
   background: var(--main);
 }
 
-@media (max-width: 768px) {
-    .Vehicle_Slider,
-    .Vehicle_Slider .box,
-    .Vehicle_Slider img,
-    .Vehicle_Slider .content {
-        position: relative;
-        z-index:1;
-        overflow: visible;
- }
-}
- @media (max-width: 480px) {
-    .Vehicle_Slider,
-    .Vehicle_Slider .box,
-    .Vehicle_Slider img,
-    .Vehicle_Slider .content {
-        position: relative;
-        z-index:1;
-        overflow: visible;
-    }
-}
 /* Theme Toggle */
 .ThemeToggle {
   position: fixed;
