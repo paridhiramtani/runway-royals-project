@@ -101,9 +101,11 @@ header .navbar {
         display: block;
         width: 100%;
         padding: 12px;
+        background: #000;
     }
 
     .menu-icon {
+        background: #000;
         display: block;
     }
 
@@ -118,8 +120,6 @@ header .navbar {
 }
 
  
-
-
 .heading span {
   color: var(--main);
 }
