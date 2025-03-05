@@ -1,4 +1,3 @@
- */tion Link Styling */
 .moon-dance-regular {
     font-family: "Moon Dance", cursive;
     font-weight: 300;
@@ -43,13 +42,7 @@ h2 {
   /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
-.moon-dance-regular {
-    font-family: "Moon Dance", cursive;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 50px;
-    color: rgb(89, 0, 255);
-}
+
 
 /* Navbar Styles */
 header .navbar {
@@ -390,6 +383,8 @@ header {
     background-size: 400% 400%;
     animation: rotateGradient 6s ease infinite;
 }
+
+  
 
   
 
